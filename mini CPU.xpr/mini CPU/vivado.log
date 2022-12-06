@@ -1,0 +1,284 @@
+#-----------------------------------------------------------
+# Vivado v2019.2 (64-bit)
+# SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
+# IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+# Start of session at: Fri Jul 29 18:09:13 2022
+# Process ID: 13032
+# Current directory: C:/Users/fatma/OneDrive/Desktop
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent8860 C:\Users\fatma\OneDrive\Desktop\lab5.xpr
+# Log file: C:/Users/fatma/OneDrive/Desktop/vivado.log
+# Journal file: C:/Users/fatma/OneDrive/Desktop\vivado.jou
+#-----------------------------------------------------------
+start_guioopen_project C:/Users/fatma/OneDrive/Desktop/lab5.xprSScanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specifiedIINFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2019.2/data/ip'.ooopen_project: Time (s): cpu = 00:00:20 ; elapsed = 00:00:14 . Memory (MB): peak = 763.410 ; gain = 154.2upuupdate_compile_order -fileset sourcesexlaunch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/fatma/OneDrive/Desktop/lab5.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'testbenchv' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/fatma/OneDrive/Desktop/lab5.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj testbenchv_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/fatma/Desktop/lab5/lab5.srcs/sources_1/new/CPU.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module pc_counter
+INFO: [VRFC 10-311] analyzing module inst_mem
+WARNING: [VRFC 10-986] literal value truncated to fit in 6 bits [C:/Users/fatma/Desktop/lab5/lab5.srcs/sources_1/new/CPU.v:37]
+INFO: [VRFC 10-311] analyzing module pc_adder
+INFO: [VRFC 10-311] analyzing module ifid_reg
+INFO: [VRFC 10-311] analyzing module control_unit
+INFO: [VRFC 10-311] analyzing module regrt
+INFO: [VRFC 10-311] analyzing module register_file
+INFO: [VRFC 10-311] analyzing module immediate_extender
+INFO: [VRFC 10-311] analyzing module idexe_reg
+INFO: [VRFC 10-311] analyzing module alu_mux
+INFO: [VRFC 10-311] analyzing module alu
+INFO: [VRFC 10-311] analyzing module exemem
+INFO: [VRFC 10-311] analyzing module data_memory
+INFO: [VRFC 10-311] analyzing module memwb
+INFO: [VRFC 10-311] analyzing module wbmux
+INFO: [VRFC 10-311] analyzing module labv
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/fatma/Desktop/lab5/lab5.srcs/sim_1/new/testbench.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module testbenchv
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/fatma/OneDrive/Desktop/lab5.sim/sim_1/behav/xsim'
+"xelab -wto 05c07caa17a44ac284d65f0c3a794b7b --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot testbenchv_behav xil_defaultlib.testbenchv xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.2
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.2/bin/unwrapped/win64.o/xelab.exe -wto 05c07caa17a44ac284d65f0c3a794b7b --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot testbenchv_behav xil_defaultlib.testbenchv xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+WARNING: [VRFC 10-3091] actual bit length 5 differs from formal bit length 6 for port 'destReg' [C:/Users/fatma/Desktop/lab5/lab5.srcs/sources_1/new/CPU.v:484]
+Completed static elaboration
+Starting simulation data flow analysis
+WARNING: [XSIM 43-4099] "C:/Users/fatma/Desktop/lab5/lab5.srcs/sources_1/new/CPU.v" Line 413. Module labv doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/fatma/Desktop/lab5/lab5.srcs/sources_1/new/CPU.v" Line 51. Module pc_adder doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/fatma/Desktop/lab5/lab5.srcs/sources_1/new/CPU.v" Line 1. Module pc_counter doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/fatma/Desktop/lab5/lab5.srcs/sources_1/new/CPU.v" Line 21. Module inst_mem doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/fatma/Desktop/lab5/lab5.srcs/sources_1/new/CPU.v" Line 70. Module ifid_reg doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/fatma/Desktop/lab5/lab5.srcs/sources_1/new/CPU.v" Line 88. Module control_unit doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/fatma/Desktop/lab5/lab5.srcs/sources_1/new/CPU.v" Line 135. Module regrt doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/fatma/Desktop/lab5/lab5.srcs/sources_1/new/CPU.v" Line 158. Module register_file doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/fatma/Desktop/lab5/lab5.srcs/sources_1/new/CPU.v" Line 202. Module immediate_extender doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/fatma/Desktop/lab5/lab5.srcs/sources_1/new/CPU.v" Line 217. Module idexe_reg doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/fatma/Desktop/lab5/lab5.srcs/sources_1/new/CPU.v" Line 258. Module alu_mux doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/fatma/Desktop/lab5/lab5.srcs/sources_1/new/CPU.v" Line 277. Module alu doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/fatma/Desktop/lab5/lab5.srcs/sources_1/new/CPU.v" Line 298. Module exemem doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/fatma/Desktop/lab5/lab5.srcs/sources_1/new/CPU.v" Line 328. Module data_memory doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/fatma/Desktop/lab5/lab5.srcs/sources_1/new/CPU.v" Line 364. Module memwb doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/fatma/Desktop/lab5/lab5.srcs/sources_1/new/CPU.v" Line 391. Module wbmux doesn't have a timescale but at least one module in design has a timescale.
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.pc_adder
+Compiling module xil_defaultlib.pc_counter
+Compiling module xil_defaultlib.inst_mem
+Compiling module xil_defaultlib.ifid_reg
+Compiling module xil_defaultlib.control_unit
+Compiling module xil_defaultlib.regrt
+Compiling module xil_defaultlib.register_file
+Compiling module xil_defaultlib.immediate_extender
+Compiling module xil_defaultlib.idexe_reg
+Compiling module xil_defaultlib.alu_mux
+Compiling module xil_defaultlib.alu
+Compiling module xil_defaultlib.exemem
+Compiling module xil_defaultlib.data_memory
+Compiling module xil_defaultlib.memwb
+Compiling module xil_defaultlib.wbmux
+Compiling module xil_defaultlib.labv
+Compiling module xil_defaultlib.testbenchv
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot testbenchv_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/fatma/OneDrive/Desktop/lab5.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "testbenchv_behav -key {Behavioral:sim_1:Functional:testbenchv} -tclbatch {testbenchv.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2019.2
+Time resolution is 1 ps
+source testbenchv.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'testbenchv_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:11 ; elapsed = 00:00:11 . Memory (MB): peak = 809.152 ; gain = 37.238
+launch_runs synth_1 -jobs 4
+[Fri Jul 29 18:35:31 2022] Launched synth_1...
+Run output will be captured here: C:/Users/fatma/OneDrive/Desktop/lab5.runs/synth_1/runme.log
+launch_runs impl_1 -jobs 4
+[Fri Jul 29 18:36:22 2022] Launched impl_1...
+Run output will be captured here: C:/Users/fatma/OneDrive/Desktop/lab5.runs/impl_1/runme.log
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+[Fri Jul 29 18:37:14 2022] Launched synth_1...
+Run output will be captured here: C:/Users/fatma/OneDrive/Desktop/lab5.runs/synth_1/runme.log
+open_run synth_1 -name synth_1
+Design is defaulting to impl run constrset: constrs_1
+Design is defaulting to synth run part: xc7z010clg400-1
+INFO: [Device 21-403] Loading part xc7z010clg400-1
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.014 . Memory (MB): peak = 1071.281 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 112 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2019.2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1154.258 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+open_run: Time (s): cpu = 00:00:17 ; elapsed = 00:00:10 . Memory (MB): peak = 1300.539 ; gain = 450.215
+synth_design -rtl -name rtl_1
+Command: synth_design -rtl -name rtl_1
+Starting synth_design
+Using part: xc7z010clg400-1
+Top: labv
+WARNING: [Synth 8-2292] literal value truncated to fit in 6 bits [C:/Users/fatma/Desktop/lab5/lab5.srcs/sources_1/new/CPU.v:37]
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 2000.160 ; gain = 220.199
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'labv' [C:/Users/fatma/Desktop/lab5/lab5.srcs/sources_1/new/CPU.v:413]
+INFO: [Synth 8-6157] synthesizing module 'pc_adder' [C:/Users/fatma/Desktop/lab5/lab5.srcs/sources_1/new/CPU.v:51]
+INFO: [Synth 8-6155] done synthesizing module 'pc_adder' (1#1) [C:/Users/fatma/Desktop/lab5/lab5.srcs/sources_1/new/CPU.v:51]
+INFO: [Synth 8-6157] synthesizing module 'pc_counter' [C:/Users/fatma/Desktop/lab5/lab5.srcs/sources_1/new/CPU.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'pc_counter' (2#1) [C:/Users/fatma/Desktop/lab5/lab5.srcs/sources_1/new/CPU.v:1]
+INFO: [Synth 8-6157] synthesizing module 'inst_mem' [C:/Users/fatma/Desktop/lab5/lab5.srcs/sources_1/new/CPU.v:21]
+INFO: [Synth 8-6155] done synthesizing module 'inst_mem' (3#1) [C:/Users/fatma/Desktop/lab5/lab5.srcs/sources_1/new/CPU.v:21]
+INFO: [Synth 8-6157] synthesizing module 'ifid_reg' [C:/Users/fatma/Desktop/lab5/lab5.srcs/sources_1/new/CPU.v:70]
+INFO: [Synth 8-6155] done synthesizing module 'ifid_reg' (4#1) [C:/Users/fatma/Desktop/lab5/lab5.srcs/sources_1/new/CPU.v:70]
+INFO: [Synth 8-6157] synthesizing module 'control_unit' [C:/Users/fatma/Desktop/lab5/lab5.srcs/sources_1/new/CPU.v:88]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/fatma/Desktop/lab5/lab5.srcs/sources_1/new/CPU.v:114]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/fatma/Desktop/lab5/lab5.srcs/sources_1/new/CPU.v:111]
+INFO: [Synth 8-6155] done synthesizing module 'control_unit' (5#1) [C:/Users/fatma/Desktop/lab5/lab5.srcs/sources_1/new/CPU.v:88]
+INFO: [Synth 8-6157] synthesizing module 'regrt' [C:/Users/fatma/Desktop/lab5/lab5.srcs/sources_1/new/CPU.v:135]
+INFO: [Synth 8-6155] done synthesizing module 'regrt' (6#1) [C:/Users/fatma/Desktop/lab5/lab5.srcs/sources_1/new/CPU.v:135]
+INFO: [Synth 8-6157] synthesizing module 'register_file' [C:/Users/fatma/Desktop/lab5/lab5.srcs/sources_1/new/CPU.v:158]
+INFO: [Synth 8-6155] done synthesizing module 'register_file' (7#1) [C:/Users/fatma/Desktop/lab5/lab5.srcs/sources_1/new/CPU.v:158]
+INFO: [Synth 8-6157] synthesizing module 'immediate_extender' [C:/Users/fatma/Desktop/lab5/lab5.srcs/sources_1/new/CPU.v:202]
+INFO: [Synth 8-6155] done synthesizing module 'immediate_extender' (8#1) [C:/Users/fatma/Desktop/lab5/lab5.srcs/sources_1/new/CPU.v:202]
+INFO: [Synth 8-6157] synthesizing module 'idexe_reg' [C:/Users/fatma/Desktop/lab5/lab5.srcs/sources_1/new/CPU.v:217]
+INFO: [Synth 8-6155] done synthesizing module 'idexe_reg' (9#1) [C:/Users/fatma/Desktop/lab5/lab5.srcs/sources_1/new/CPU.v:217]
+INFO: [Synth 8-6157] synthesizing module 'alu_mux' [C:/Users/fatma/Desktop/lab5/lab5.srcs/sources_1/new/CPU.v:258]
+INFO: [Synth 8-6155] done synthesizing module 'alu_mux' (10#1) [C:/Users/fatma/Desktop/lab5/lab5.srcs/sources_1/new/CPU.v:258]
+INFO: [Synth 8-6157] synthesizing module 'alu' [C:/Users/fatma/Desktop/lab5/lab5.srcs/sources_1/new/CPU.v:277]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/fatma/Desktop/lab5/lab5.srcs/sources_1/new/CPU.v:287]
+INFO: [Synth 8-6155] done synthesizing module 'alu' (11#1) [C:/Users/fatma/Desktop/lab5/lab5.srcs/sources_1/new/CPU.v:277]
+INFO: [Synth 8-6157] synthesizing module 'exemem' [C:/Users/fatma/Desktop/lab5/lab5.srcs/sources_1/new/CPU.v:298]
+INFO: [Synth 8-6155] done synthesizing module 'exemem' (12#1) [C:/Users/fatma/Desktop/lab5/lab5.srcs/sources_1/new/CPU.v:298]
+INFO: [Synth 8-6157] synthesizing module 'data_memory' [C:/Users/fatma/Desktop/lab5/lab5.srcs/sources_1/new/CPU.v:328]
+INFO: [Synth 8-6155] done synthesizing module 'data_memory' (13#1) [C:/Users/fatma/Desktop/lab5/lab5.srcs/sources_1/new/CPU.v:328]
+INFO: [Synth 8-6157] synthesizing module 'memwb' [C:/Users/fatma/Desktop/lab5/lab5.srcs/sources_1/new/CPU.v:364]
+INFO: [Synth 8-6155] done synthesizing module 'memwb' (14#1) [C:/Users/fatma/Desktop/lab5/lab5.srcs/sources_1/new/CPU.v:364]
+INFO: [Synth 8-6157] synthesizing module 'wbmux' [C:/Users/fatma/Desktop/lab5/lab5.srcs/sources_1/new/CPU.v:391]
+INFO: [Synth 8-6155] done synthesizing module 'wbmux' (15#1) [C:/Users/fatma/Desktop/lab5/lab5.srcs/sources_1/new/CPU.v:391]
+INFO: [Synth 8-6155] done synthesizing module 'labv' (16#1) [C:/Users/fatma/Desktop/lab5/lab5.srcs/sources_1/new/CPU.v:413]
+WARNING: [Synth 8-3331] design data_memory has unconnected port mr[31]
+WARNING: [Synth 8-3331] design data_memory has unconnected port mr[30]
+WARNING: [Synth 8-3331] design data_memory has unconnected port mr[29]
+WARNING: [Synth 8-3331] design data_memory has unconnected port mr[28]
+WARNING: [Synth 8-3331] design data_memory has unconnected port mr[27]
+WARNING: [Synth 8-3331] design data_memory has unconnected port mr[26]
+WARNING: [Synth 8-3331] design data_memory has unconnected port mr[25]
+WARNING: [Synth 8-3331] design data_memory has unconnected port mr[24]
+WARNING: [Synth 8-3331] design data_memory has unconnected port mr[23]
+WARNING: [Synth 8-3331] design data_memory has unconnected port mr[22]
+WARNING: [Synth 8-3331] design data_memory has unconnected port mr[21]
+WARNING: [Synth 8-3331] design data_memory has unconnected port mr[20]
+WARNING: [Synth 8-3331] design data_memory has unconnected port mr[19]
+WARNING: [Synth 8-3331] design data_memory has unconnected port mr[18]
+WARNING: [Synth 8-3331] design data_memory has unconnected port mr[17]
+WARNING: [Synth 8-3331] design data_memory has unconnected port mr[16]
+WARNING: [Synth 8-3331] design data_memory has unconnected port mr[15]
+WARNING: [Synth 8-3331] design data_memory has unconnected port mr[14]
+WARNING: [Synth 8-3331] design data_memory has unconnected port mr[13]
+WARNING: [Synth 8-3331] design data_memory has unconnected port mr[12]
+WARNING: [Synth 8-3331] design data_memory has unconnected port mr[11]
+WARNING: [Synth 8-3331] design data_memory has unconnected port mr[10]
+WARNING: [Synth 8-3331] design data_memory has unconnected port mr[9]
+WARNING: [Synth 8-3331] design data_memory has unconnected port mr[8]
+WARNING: [Synth 8-3331] design data_memory has unconnected port mr[1]
+WARNING: [Synth 8-3331] design data_memory has unconnected port mr[0]
+WARNING: [Synth 8-3331] design idexe_reg has unconnected port destReg[5]
+WARNING: [Synth 8-3331] design inst_mem has unconnected port pc[31]
+WARNING: [Synth 8-3331] design inst_mem has unconnected port pc[30]
+WARNING: [Synth 8-3331] design inst_mem has unconnected port pc[29]
+WARNING: [Synth 8-3331] design inst_mem has unconnected port pc[28]
+WARNING: [Synth 8-3331] design inst_mem has unconnected port pc[27]
+WARNING: [Synth 8-3331] design inst_mem has unconnected port pc[26]
+WARNING: [Synth 8-3331] design inst_mem has unconnected port pc[25]
+WARNING: [Synth 8-3331] design inst_mem has unconnected port pc[24]
+WARNING: [Synth 8-3331] design inst_mem has unconnected port pc[23]
+WARNING: [Synth 8-3331] design inst_mem has unconnected port pc[22]
+WARNING: [Synth 8-3331] design inst_mem has unconnected port pc[21]
+WARNING: [Synth 8-3331] design inst_mem has unconnected port pc[20]
+WARNING: [Synth 8-3331] design inst_mem has unconnected port pc[19]
+WARNING: [Synth 8-3331] design inst_mem has unconnected port pc[18]
+WARNING: [Synth 8-3331] design inst_mem has unconnected port pc[17]
+WARNING: [Synth 8-3331] design inst_mem has unconnected port pc[16]
+WARNING: [Synth 8-3331] design inst_mem has unconnected port pc[15]
+WARNING: [Synth 8-3331] design inst_mem has unconnected port pc[14]
+WARNING: [Synth 8-3331] design inst_mem has unconnected port pc[13]
+WARNING: [Synth 8-3331] design inst_mem has unconnected port pc[12]
+WARNING: [Synth 8-3331] design inst_mem has unconnected port pc[11]
+WARNING: [Synth 8-3331] design inst_mem has unconnected port pc[10]
+WARNING: [Synth 8-3331] design inst_mem has unconnected port pc[9]
+WARNING: [Synth 8-3331] design inst_mem has unconnected port pc[8]
+WARNING: [Synth 8-3331] design inst_mem has unconnected port pc[1]
+WARNING: [Synth 8-3331] design inst_mem has unconnected port pc[0]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 2074.809 ; gain = 294.848
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 2096.676 ; gain = 316.715
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 2096.676 ; gain = 316.715
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.034 . Memory (MB): peak = 2096.676 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Completed Processing XDC Constraints
+
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2205.504 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+RTL Elaboration Complete:  : Time (s): cpu = 00:00:11 ; elapsed = 00:00:09 . Memory (MB): peak = 2205.504 ; gain = 425.543
+38 Infos, 54 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:11 ; elapsed = 00:00:09 . Memory (MB): peak = 2205.504 ; gain = 425.543
+archive_project C:/Users/fatma/OneDrive/Desktop/lab5.xpr.zip -temp_dir C:/Users/fatma/OneDrive/Desktop/.Xil/Vivado-13032-DESKTOP-G9O4LKL -force -include_local_ip_cache
+INFO: [Coretcl 2-137] starting archive...
+INFO: [Coretcl 2-1499] Saving project copy to temporary location 'C:/Users/fatma/OneDrive/Desktop/.Xil/Vivado-13032-DESKTOP-G9O4LKL' for archiving project
+Scanning sources...
+Finished scanning sources
+INFO: [Coretcl 2-1211] Creating project copy for archival...
+INFO: [Coretcl 2-1213] Including run results for 'synth_1'
+INFO: [Coretcl 2-1213] Including run results for 'impl_1'
+INFO: [Coretcl 2-1212] Importing remotely added design sources and verilog include files (if any)...
+INFO: [filemgmt 20-348] Importing the appropriate files for fileset: 'sim_1'
+INFO: [filemgmt 20-348] Importing the appropriate files for fileset: 'sources_1'
